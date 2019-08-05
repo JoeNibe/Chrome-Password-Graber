@@ -1,5 +1,5 @@
 # Chrome-Password-Graber
-A python script to grab the saved chrome passwords 
+A python script to grab the saved chrome passwords (Only works on windows)
 
 ## Usage
 `python ./chrome.py`
